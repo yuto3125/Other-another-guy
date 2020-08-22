@@ -7,8 +7,12 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,6 +32,9 @@
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn"
     }
+  },
+  "resolutions": {
+    "react-test-renderer": "16.13.1"
   },
   "browserslist": {
     "production": [

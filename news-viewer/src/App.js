@@ -24,6 +24,7 @@ const App = () => {
     //   <Categories category={category} onSelect={onSelect} />
     //   <NewsList category={category} />
     // </>
+    // <Route path="/:category?" render={NewsPage} />
     <Route path="/:category?" component={NewsPage} />
   );
   // (<div className="App">

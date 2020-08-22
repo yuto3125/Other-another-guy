@@ -12,7 +12,7 @@ const categories = [
     text: 'Business',
   },
   {
-    name: 'entertainments',
+    name: 'entertainment',
     text: 'Entertainments',
   },
   {
@@ -67,7 +67,10 @@ const Category = styled(NavLink)`
     margin-left: 1rem;
   }
 `;
-const Categories = ({ onSelect, category }) => {
+// {
+//   onSelect, category;
+// }
+const Categories = () => {
   return (
     <CategoriesBlock>
       {categories.map(c => (
