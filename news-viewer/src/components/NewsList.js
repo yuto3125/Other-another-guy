@@ -19,25 +19,6 @@ const NewsListBlock = styled.div`
 `;
 
 const NewsList = ({ category }) => {
-  // const [articles, setArticles] = useState(null);
-  // const [loading, setLoading] = useState(false);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     setLoading(true);
-  //     try {
-  //       const query = category === 'all' ? '' : `&category=${category}`;
-  //       const response = await axios.get(
-  //         `http://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=fc59d8e67e2a4729bc9fa464f388240f`
-  //       );
-  //       setArticles(response.data.articles);
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //     setLoading(false);
-  //   };
-  //   fetchData();
-  // }, [category]);
   const [loading, response, error] = usePromise(() => {
     const query = category === 'all' ? '' : `&category=${category}`;
     console.log(query);
@@ -50,7 +31,6 @@ const NewsList = ({ category }) => {
     return <NewsListBlock>Still Loading...</NewsListBlock>;
   }
   if (!response) {
-    // console.log(response);
     return null;
   }
   if (error) {
