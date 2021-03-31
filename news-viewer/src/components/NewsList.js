@@ -1,7 +1,6 @@
-// import React, { useState, useEffect } from 'react';
 import React from 'react';
-import styled from 'C:/Users/kuuha/AppData/Roaming/npm/node_modules/styled-components';
-import axios from 'C:/Users/kuuha/AppData/Roaming/npm/node_modules/axios';
+import styled from 'styled-components';
+import axios from 'axios';
 import NewsItem from './NewsItem';
 import { usePromise } from '../lib/usePromise';
 
